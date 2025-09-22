@@ -29,6 +29,7 @@ if Op in ("+", "-", "*", "/", "//", "%", "**"):
             Solution = n1 % n2
     elif Op == "**":
         Solution = n1 ** n2
+    print(Solution)
 elif Op in ("==", "!=", ">", "<", ">=", "<="):
     print("Введите первое число:")
     n1 = float(input())
@@ -64,6 +65,7 @@ elif Op in ("==", "!=", ">", "<", ">=", "<="):
             Solution = True
         else:
             Solution = False
+    print(Solution)
 elif Op in ("and", "or", "not"):
     if Op == "not":
         print("Введите результат высказывания (True/False, 1/0)")
@@ -116,6 +118,7 @@ elif Op in ("and", "or", "not"):
             Solution = "Ошибка"
         else:
             Solution = n1 or n2
+    print(Solution)
 elif Op in ("&", "|", "^", "~", "<<", ">>"):
     if Op == "&":
         print("Введите первое число:")
@@ -151,6 +154,7 @@ elif Op in ("&", "|", "^", "~", "<<", ">>"):
         print("Введите второе число:")
         n2 = int(input())
         Solution = n1 >> n2
+    print(Solution)
 elif Op in ("in", "not in"):
     if Op == "in":
         print("Введите информацию")
@@ -170,6 +174,7 @@ elif Op in ("in", "not in"):
             Solution = True
         else:
             Solution = False
+    print(Solution)
 elif Op in ("is", "is not"):
     if Op == "is":
         print("Введите первое значение:")
